@@ -4,7 +4,7 @@ setInterval(function() {
 function start() {
   var now = new Date();
   var rok = now.getFullYear();
-  var bigDay = new Date(rok, 11, 24);
+  var bigDay = new Date(rok, 11, 25);
   var dzien = now.getDate();
   var miesiac = now.getMonth() + 1;
   console.log(rok);

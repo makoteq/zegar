@@ -80,18 +80,21 @@ body{
 }
 #contener1{
   text-align: center;
-  font-size: 2em;
-  width:50%;
-  height: 100vh;
-  float: left;
-}
-#contener2{
-  width:50%;
+  width:100%;
   height: 100vh;
   float: left;
 }
 #fotter{
   font-family: 'Mountains of Christmas', cursive;
-  margin-top:60vh;
-  margin-left:20vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size:2em;
+}
+.par{
+  font-size: 2em;
+}
+#licznik{
+  font-size: 1.5em;
 }
