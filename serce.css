@@ -2,10 +2,18 @@ body{
   font-family: 'Charm', cursive;
   color:white;
   margin: 0;
-  background-size:cover;
-  background-image:url("ch.jpg");
+  background-size: cover;
+  background-image: url('ch.jpg'); 
 }
 
+/* For device width 400px and larger: */
+@media only screen and (max-width: 600px) {
+  body { 
+  background-repeat: no-repeat;
+  background-color:rgb(173, 56, 56);
+  background-image:none; 
+  }
+}
 #heart {
     position: relative;
     width: 100px;
@@ -85,7 +93,7 @@ body{
   float: left;
 }
 #fotter{
-  font-family: 'Mountains of Christmas', cursive;
+  font-family: 'Caveat', cursive;
   position: fixed;
   left: 0;
   bottom: 0;
