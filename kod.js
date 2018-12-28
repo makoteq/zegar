@@ -2,18 +2,19 @@ setInterval(function() {
   start();
 }, 1000);
 function start() {
-  var now = new Date();
+
+ var now = new Date();
   var rok = now.getFullYear();
+if (now.getDate() > 24 && now.getDate() < 31 && now.getMonth() == 11) {
+    rok++;
+  } 
   var bigDay = new Date(rok, 11, 25);
   var dzien = now.getDate();
   var miesiac = now.getMonth() + 1;
   console.log(rok);
-  if (dzien > 24 && dzien < 31 && miesiac == 12) {
-    rok == now.getFullYear() + 1;
-  } else
   var czas = now.getTime();
   var ile = bigDay - czas;
-  var difference = new Date(ile);
+  var difference = new Date(Math.abs(ile));
   var days = Math.floor(difference / 86400000);
   var milis = difference % 86400000;
   var hours = Math.floor(milis / 3600000);
